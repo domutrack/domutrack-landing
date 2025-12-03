@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DomuTrack – Application Budget Travaux, Suivi Dépenses Chantier & Gestion Coûts Maison</title>
+    <title>DomuTrack – Suivi Budget Travaux, Dépenses Chantier & Gestion Construction</title>
 
     <!-- META SEO -->
-    <meta name="description" content="DomuTrack est l'application idéale pour gérer votre budget travaux, suivre les dépenses de votre chantier, contrôler vos factures et piloter la construction ou rénovation de votre maison.">
-    <meta name="keywords" content="budget travaux, suivi dépenses chantier, application budget maison, suivi budget travaux, contrôle coûts construction, factures travaux, gestion budget chantier, application rénovation maison">
+    <meta name="description" content="DomuTrack est l'application la plus complète pour gérer votre budget travaux, suivre les dépenses de votre chantier, contrôler vos factures et piloter la construction de votre maison. Disponible sur Android.">
+    <meta name="keywords" content="budget travaux, suivi dépenses chantier, application budget maison, suivi budget travaux, contrôle coûts construction, factures travaux, gestion budget chantier, application rénovation maison, pilotage chantier, application travaux">
 
-    <!-- Schema.org (SEO Avancé) -->
+    <!-- Schema.org SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -22,14 +22,15 @@
     }
     </script>
 
-    <!-- Fonts + Styles -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Styles -->
     <style>
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: #F6F3EE; /* beige clair */
+            background-color: #F6F3EE;
             color: #1D1D1D;
             line-height: 1.6;
         }
@@ -39,25 +40,14 @@
             text-align: center;
             padding: 80px 20px 60px 20px;
         }
-
         .logo {
             width: 120px;
             margin-bottom: 20px;
         }
-
         h1 {
-            font-size: 38px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-size: 40px;
+            margin-bottom: 20px;
         }
-
-        h2 {
-            font-size: 28px;
-            margin: 60px 0 25px;
-            text-align: center;
-            font-weight: 700;
-        }
-
         .subtitle {
             font-size: 19px;
             opacity: 0.85;
@@ -65,137 +55,159 @@
             margin: auto;
             margin-bottom: 40px;
         }
-
         .btn {
             display: inline-block;
             padding: 15px 25px;
-            background-color: #0B3D2E; /* vert sapin */
+            background-color: #0B3D2E;
             color: white;
             font-weight: 600;
             border-radius: 10px;
             text-decoration: none;
         }
 
-        /* FEATURES */
-        .features {
-            max-width: 1100px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 0 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-
-        .mockup {
+        /* SECTION TITLES */
+        h2.section-title {
             text-align: center;
-            margin: 70px 20px;
+            font-size: 32px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+        .section-subtitle {
+            text-align: center;
+            max-width: 650px;
+            margin: auto;
+            margin-bottom: 50px;
+            opacity: 0.8;
         }
 
-        .mockup img {
+        /* MOCKUP SECTIONS */
+        .mockup-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .mockup-section img {
             width: 280px;
             border-radius: 18px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+        .mockup-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .mockup-text h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .mockup-text p {
+            font-size: 17px;
+            opacity: 0.85;
         }
 
+        /* SEO TEXT */
         .seo-text {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 60px auto;
             padding: 0 20px;
             font-size: 17px;
             opacity: 0.9;
         }
 
+        /* FOOTER */
         footer {
             text-align: center;
             padding: 40px;
             opacity: 0.7;
             font-size: 14px;
         }
-
         footer a {
             color: #0B3D2E;
             text-decoration: none;
         }
     </style>
-
 </head>
+
 <body>
 
     <!-- HERO -->
     <section class="hero">
         <img src="logo.png" class="logo" alt="Logo DomuTrack">
-        <h1>Gérez votre budget travaux & suivez les dépenses de votre chantier</h1>
-        <p class="subtitle">
-            DomuTrack est l’application indispensable pour contrôler vos coûts de construction, suivre vos factures, anticiper les dépassements et piloter efficacement votre projet de maison ou rénovation.
-        </p>
-        <a href="https://play.google.com/store/apps/details?id=com.domutrack.maisonbudgetpro" class="btn">
-            Télécharger sur Google Play
-        </a>
+        <h1>Gérez votre budget travaux & pilotez votre chantier simplement</h1>
+        <p class="subtitle">DomuTrack centralise budget, dépenses, factures, financements et avancement du chantier pour un pilotage clair et sans stress.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.domutrack.maisonbudgetpro" class="btn">Télécharger sur Google Play</a>
     </section>
 
-    <!-- FONCTIONNALITÉS -->
-    <h2>Une application complète pour gérer le budget de votre chantier</h2>
 
-    <section class="features">
-
-        <div class="card">
-            <h3>Budget travaux clair & organisé</h3>
-            <p>Visualisez vos lots, dépenses engagées, restants à payer et dépassements potentiels. DomuTrack vous aide à garder un budget travaux maîtrisé, du début à la fin du chantier.</p>
+    <!-- BUDGET -->
+    <h2 class="section-title">Gardez une vision claire de votre budget travaux</h2>
+    <p class="section-subtitle">Suivez vos lots, vos dépenses engagées et vos restants en un coup d’œil.</p>
+    <section class="mockup-section">
+        <img src="mockup-budget.png" alt="Mockup Budget DomuTrack">
+        <div class="mockup-text">
+            <h3>Budget maîtrisé du début à la fin</h3>
+            <p>Organisez vos lots, surveillez vos dépassements et visualisez votre situation financière en temps réel.</p>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Suivi des dépenses chantier</h3>
-            <p>Chaque dépense est classée par lot, fournisseur et date. Analysez où part votre budget et optimisez vos choix.</p>
+
+    <!-- FINANCEMENT -->
+    <h2 class="section-title">Centralisez tous vos financements</h2>
+    <p class="section-subtitle">Prêts bancaires, apports personnels, aides… tout est regroupé.</p>
+    <section class="mockup-section">
+        <div class="mockup-text">
+            <h3>Gérez vos ressources financières</h3>
+            <p>DomuTrack vous permet de centraliser et suivre l'ensemble de vos financements en un seul endroit.</p>
         </div>
+        <img src="mockup-financement.png" alt="Mockup Financement DomuTrack">
+    </section>
 
-        <div class="card">
-            <h3>Gestion des financements</h3>
-            <p>Regroupez vos prêts bancaires, apports personnels et aides. Suivez le financement total de votre projet de construction.</p>
+
+    <!-- FACTURES -->
+    <h2 class="section-title">Suivez vos factures et évitez les retards</h2>
+    <p class="section-subtitle">Classement, statuts, retards, paiements… tout est sous contrôle.</p>
+    <section class="mockup-section">
+        <img src="mockup-factures.png" alt="Mockup Factures DomuTrack">
+        <div class="mockup-text">
+            <h3>Chaque facture à sa place</h3>
+            <p>Identifiez les factures à payer, en retard ou déjà réglées pour un suivi précis de votre chantier.</p>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Suivi des factures travaux</h3>
-            <p>Importez et classez toutes vos factures, identifiez celles en retard et gardez le contrôle sur les paiements fournisseurs.</p>
+
+    <!-- DASHBOARD -->
+    <h2 class="section-title">Pilotez votre chantier en un coup d'œil</h2>
+    <p class="section-subtitle">Un tableau de bord clair et complet pour avoir toujours une longueur d’avance.</p>
+    <section class="mockup-section">
+        <div class="mockup-text">
+            <h3>Un aperçu global instantané</h3>
+            <p>Suivez l’avancement, les dépenses, les factures et vos financements sur un seul écran synthétique.</p>
         </div>
+        <img src="mockup-dashboard.png" alt="Mockup Dashboard DomuTrack">
+    </section>
 
-        <div class="card">
+
+    <!-- RAPPORT PDF -->
+    <h2 class="section-title">Générez un PDF professionnel</h2>
+    <p class="section-subtitle">Vos données, mises en forme proprement pour suivre et partager votre chantier.</p>
+    <section class="mockup-section">
+        <img src="mockup-rapport.png" alt="Mockup Rapport PDF DomuTrack">
+        <div class="mockup-text">
             <h3>Export PDF complet</h3>
-            <p>Générez un rapport PDF clair avec budget, dépenses, factures et avancement du chantier.</p>
+            <p>Budget, dépenses, factures, avancement… tout est regroupé dans un PDF professionnel.</p>
         </div>
-
-        <div class="card">
-            <h3>Pilotage de l’avancement</h3>
-            <p>Un tableau de bord simple résume l’état de votre chantier : ce qui est fait, ce qu’il reste à faire, et les coûts associés.</p>
-        </div>
-
     </section>
 
-    <!-- MOCKUP -->
-    <section class="mockup">
-        <img src="mockup.png" alt="Aperçu de l'application DomuTrack">
-    </section>
 
-    <!-- TEXTE SEO -->
+    <!-- SEO TEXT -->
     <div class="seo-text">
-        <p>
-            Rénover ou construire une maison entraîne souvent des dépassements de budget. DomuTrack a été conçu pour aider les particuliers, auto-constructeurs et maîtres d’œuvre à garder un contrôle total sur leurs coûts.
-            Grâce à une interface simple et épurée, vous suivez en temps réel l’évolution de votre budget travaux, les dépenses du chantier, les factures en attente, les financements mobilisés et l’avancement général.
-        </p>
-
-        <p>
-            Que vous pilotiez un gros chantier ou une rénovation plus légère, DomuTrack centralise toutes vos données financières.
-            L’objectif : vous offrir une vision claire, éviter les mauvaises surprises, et prendre de meilleures décisions pour votre projet immobilier.
-        </p>
+        <p>Construire ou rénover une maison implique de nombreuses dépenses à suivre. DomuTrack vous permet de garder une vision claire et précise de votre budget travaux, d’éviter les dépassements et de maîtriser l’ensemble de votre chantier.</p>
+        <p>Grâce à une interface simple et efficace, DomuTrack centralise vos lots, factures, dépenses, financements et rapports PDF pour un pilotage optimal de votre projet immobilier.</p>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         © 2025 DomuTrack — <a href="#">Mentions légales</a>
     </footer>
