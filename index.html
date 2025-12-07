@@ -3,143 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DomuTrack – Maîtrisez votre budget travaux & votre chantier</title>
 
-    <!-- SEO -->
-    <meta name="description" content="DomuTrack est l'application la plus intuitive pour gérer votre budget travaux, suivre vos dépenses, organiser vos factures et piloter la construction ou la rénovation de votre maison.">
-    <meta name="keywords" content="budget travaux, suivi chantier, application rénovation, factures travaux, gestion budget, suivi dépenses maison, PDF chantier, application construction">
+    <title>DomuTrack – Suivi Budget Travaux & Chantier</title>
 
-    <!-- Schema.org SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "DomuTrack",
-      "operatingSystem": "Android",
-      "applicationCategory": "FinanceApplication",
-      "description": "App pour gérer budget travaux, dépenses, factures, lots et avancement de chantier.",
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.domutrack.maisonbudgetpro"
-    }
-    </script>
+    <meta name="description" content="DomuTrack est l'application la plus intuitive pour gérer votre budget travaux, suivre vos dépenses, organiser vos factures et piloter sereinement votre chantier.">
+    <meta name="keywords" content="budget travaux, suivi chantier, dépenses travaux, factures travaux, application rénovation, gestion construction">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
     <style>
         :root {
             --sapin: #1B5E20;
-            --sapin-dark: #0D3A15;
-            --beige: #F6F3EE;
-            --text-dark: #1D1D1D;
-            --text-light: #4B4B4B;
+            --sapin-dark: #0F3A14;
+            --beige: #F4F1EB;
+            --card-bg: #FFFFFF;
+            --text-dark: #1C1C1C;
+            --text-light: #555;
         }
 
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--beige);
+            background: var(--beige);
             color: var(--text-dark);
         }
 
-        /* HERO ---------------------------------------- */
+        /* HERO ------------------------------------------------- */
         .hero {
-            padding: 110px 20px 100px;
-            text-align: center;
-            background: linear-gradient(135deg, var(--sapin) 0%, #13451A 100%);
+            background: linear-gradient(180deg, var(--sapin) 0%, #134A22 100%);
             color: white;
+            padding: 90px 20px 120px;
+            text-align: center;
+            position: relative;
         }
-        .hero .logo {
-            width: 120px;
+
+        .hero img.logo {
+            width: 110px;
             margin-bottom: 25px;
         }
+
         .hero h1 {
             font-size: 42px;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
-        .hero p {
+
+        .hero p.subtitle {
             font-size: 19px;
+            max-width: 600px;
+            margin: 0 auto 28px;
             opacity: 0.9;
-            max-width: 650px;
-            margin: 0 auto 35px;
         }
+
         .hero .btn {
             display: inline-block;
             background: white;
+            padding: 16px 26px;
             color: var(--sapin-dark);
-            padding: 16px 30px;
-            font-weight: 700;
-            font-size: 17px;
-            border-radius: 12px;
             text-decoration: none;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 12px;
+            box-shadow: 0 6px 22px rgba(0,0,0,0.2);
         }
 
-        /* SECTIONS -------------------------------------- */
-        .section {
-            padding: 70px 20px;
-            max-width: 1150px;
-            margin: auto;
+        /* FEATURE CARDS ---------------------------------------- */
+        .features {
+            max-width: 1100px;
+            margin: -60px auto 60px;
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            flex-wrap: wrap;
         }
-        .section h2 {
-            font-size: 34px;
+
+        .feature-card {
+            background: var(--card-bg);
+            flex: 1;
+            min-width: 270px;
+            padding: 25px 22px;
+            border-radius: 18px;
+            box-shadow: 0 6px 26px rgba(0,0,0,0.08);
             text-align: center;
-            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
             color: var(--sapin-dark);
         }
-        .section .subtitle {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 50px;
+
+        .feature-card p {
+            font-size: 15px;
             color: var(--text-light);
         }
 
-        /* MOCKUPS -------------------------------------- */
-        .mockup-block {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-bottom: 80px;
+        /* SECTIONS AVEC MOCKUPS -------------------------------- */
+        .section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
         }
-        .mockup-block img {
-            width: 300px;
-            border-radius: 22px;
-            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
-        }
-        .mockup-block .text {
-            flex: 1;
-            min-width: 280px;
-        }
-        .mockup-block h3 {
-            font-size: 26px;
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
             margin-bottom: 10px;
             color: var(--sapin-dark);
         }
-        .mockup-block p {
+
+        .section-subtitle {
+            text-align: center;
             font-size: 17px;
+            color: var(--text-light);
+            max-width: 650px;
+            margin: 0 auto 55px;
+        }
+
+        .mockup-block {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .mockup-block img {
+            width: 300px;
+            border-radius: 22px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .mockup-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .mockup-text h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: var(--sapin-dark);
+        }
+
+        .mockup-text p {
+            font-size: 16px;
             color: var(--text-light);
         }
 
-        /* SEO PARAGRAPH ------------------------------- */
-        .seo-text {
-            max-width: 900px;
-            margin: 40px auto 70px;
-            padding: 0 20px;
-            font-size: 17px;
-            color: #2F2F2F;
-            line-height: 1.7;
+        /* CTA FINAL -------------------------------------------- */
+        .cta-final {
+            text-align: center;
+            padding: 70px 20px;
         }
 
-        /* FOOTER --------------------------------------- */
+        .cta-final h2 {
+            font-size: 34px;
+            color: var(--sapin-dark);
+        }
+
+        .cta-final .btn {
+            margin-top: 25px;
+            display: inline-block;
+            background: var(--sapin);
+            padding: 16px 28px;
+            color: white;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.18);
+        }
+
+        /* FOOTER ------------------------------------------------ */
         footer {
+            background: #EDEAE4;
+            padding: 35px;
             text-align: center;
-            padding: 40px;
-            background: #EFEDE8;
             font-size: 14px;
-            color: #444;
-            margin-top: 40px;
         }
         footer a {
             color: var(--sapin-dark);
@@ -153,90 +192,81 @@
 
     <!-- HERO -->
     <section class="hero">
-        <img src="logo.png" alt="Logo DomuTrack" class="logo">
-        <h1>Pilotez votre budget travaux avec une simplicité inégalée</h1>
-        <p>L’application qui centralise budget, dépenses, factures, financements et avancement pour un chantier enfin maîtrisé.</p>
+        <img src="logo.png" class="logo" alt="Logo DomuTrack">
+        <h1>Pilotez votre budget travaux simplement & efficacement</h1>
+        <p class="subtitle">L'application complète pour suivre budget, dépenses, factures, financements et avancement de votre chantier.</p>
         <a href="https://play.google.com/store/apps/details?id=com.domutrack.maisonbudgetpro" class="btn">
             Télécharger sur Google Play
         </a>
     </section>
 
-    <!-- BUDGET -->
-    <section class="section">
-        <h2>Une vision claire et précise de votre budget</h2>
-        <p class="subtitle">DomuTrack vous aide à garder le contrôle total sur vos dépenses et votre avancement.</p>
-
-        <div class="mockup-block">
-            <img src="mockup-budget.png" alt="Budget DomuTrack">
-            <div class="text">
-                <h3>Suivi détaillé par lots</h3>
-                <p>Analysez vos lots, comparez le prévisionnel au réel, repérez les dépassements et anticipez les risques.</p>
-            </div>
+    <!-- FEATURE CARDS -->
+    <div class="features">
+        <div class="feature-card">
+            <h3>Budget clair</h3>
+            <p>Gardez une vision immédiate de vos dépenses prévues & réelles.</p>
         </div>
-    </section>
-
-    <!-- FINANCEMENT -->
-    <section class="section">
-        <h2>Centralisez vos financements</h2>
-        <p class="subtitle">Tout votre financement au même endroit pour une meilleure visibilité.</p>
-
-        <div class="mockup-block">
-            <div class="text">
-                <h3>Prêts, apports, aides… tout est regroupé</h3>
-                <p>DomuTrack vous permet de suivre précisément toutes vos ressources financières et leur évolution.</p>
-            </div>
-            <img src="mockup-financement.png" alt="Financement DomuTrack">
+        <div class="feature-card">
+            <h3>Factures triées</h3>
+            <p>Un suivi propre et structuré de toutes vos factures.</p>
         </div>
-    </section>
-
-    <!-- FACTURES -->
-    <section class="section">
-        <h2>Organisez vos factures et paiements</h2>
-        <p class="subtitle">Ne ratez plus un paiement et gardez tout sous contrôle.</p>
-
-        <div class="mockup-block">
-            <img src="mockup-factures.png" alt="Factures DomuTrack">
-            <div class="text">
-                <h3>Classement clair & rappels intelligents</h3>
-                <p>Visualisez vos factures par statut : à payer, en retard ou réglées. Tout est ordonné automatiquement.</p>
-            </div>
+        <div class="feature-card">
+            <h3>Financements centralisés</h3>
+            <p>Regroupez prêts, apports et aides en un seul endroit.</p>
         </div>
-    </section>
-
-    <!-- DASHBOARD -->
-    <section class="section">
-        <h2>Pilotez votre chantier d’un seul regard</h2>
-        <p class="subtitle">Votre tableau de bord vous donne une vision globale immédiate.</p>
-
-        <div class="mockup-block">
-            <div class="text">
-                <h3>Un aperçu global instantané</h3>
-                <p>Suivez dépenses, avancement, factures et financements depuis un écran simple et intuitif.</p>
-            </div>
-            <img src="mockup-dashboard.png" alt="Dashboard DomuTrack">
-        </div>
-    </section>
-
-    <!-- PDF -->
-    <section class="section">
-        <h2>Un PDF professionnel en un clic</h2>
-        <p class="subtitle">Partagez ou archivez votre chantier proprement.</p>
-
-        <div class="mockup-block">
-            <img src="mockup-rapport.png" alt="PDF DomuTrack">
-            <div class="text">
-                <h3>Export complet et clair</h3>
-                <p>Votre budget, vos dépenses, vos factures et votre avancement réunis dans un rapport PDF structuré.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEO BLOCK -->
-    <div class="seo-text">
-        <p>DomuTrack est pensé pour accompagner chaque particulier qui construit ou rénove son logement. Grâce à une interface intuitive, l'application centralise le suivi budgétaire, les dépenses engagées, les factures, les financements et les rapports PDF pour vous offrir une vue globale et fiable de votre chantier.</p>
-        <p>Disponible sur Android, DomuTrack simplifie la gestion de votre projet immobilier afin de vous permettre d’avancer sereinement, sans mauvaise surprise.</p>
     </div>
 
+    <!-- SECTION BUDGET -->
+    <section class="section">
+        <h2 class="section-title">Une vision claire et précise de votre budget</h2>
+        <p class="section-subtitle">Suivi par lots, alertes et visibilité immédiate sur votre situation financière.</p>
+
+        <div class="mockup-block">
+            <img src="mockup-budget.png" alt="">
+            <div class="mockup-text">
+                <h3>Suivi détaillé par lots</h3>
+                <p>Comparez le prévisionnel et le réel, identifiez les dépassements, maîtrisez vos coûts en continu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FINANCEMENT -->
+    <section class="section">
+        <h2 class="section-title">Centralisez tous vos financements</h2>
+        <p class="section-subtitle">Prêts, apports, aides… tout est regroupé proprement.</p>
+
+        <div class="mockup-block">
+            <div class="mockup-text">
+                <h3>Une vue simple de vos ressources</h3>
+                <p>Visualisez facilement l’origine de vos financements et leur consommation.</p>
+            </div>
+            <img src="mockup-financement.png" alt="">
+        </div>
+    </section>
+
+    <!-- SECTION FACTURES -->
+    <section class="section">
+        <h2 class="section-title">Organisez vos factures & paiements</h2>
+        <p class="section-subtitle">Un classement intelligent pour ne rien oublier.</p>
+
+        <div class="mockup-block">
+            <img src="mockup-factures.png" alt="">
+            <div class="mockup-text">
+                <h3>Classement clair & rappels</h3>
+                <p>Identifiez instantanément les factures à payer, en retard ou réglées.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CTA FINAL -->
+    <section class="cta-final">
+        <h2>Commencez à maîtriser votre chantier dès aujourd’hui</h2>
+        <a href="https://play.google.com/store/apps/details?id=com.domutrack.maisonbudgetpro" class="btn">
+            Télécharger DomuTrack
+        </a>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         © 2025 DomuTrack — <a href="privacy-policy.html">Politique de confidentialité</a>
     </footer>
